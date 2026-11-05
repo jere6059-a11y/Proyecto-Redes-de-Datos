@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenidos</title>
+    <link rel="icon" href="img/delta.png">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">       
+            <img src="img/delta.png"  class="logo">        
+            <div>        
+                <h1>CONTENIDOS DE LA CARPETA</h1>        
+                <h2>REDES DE DATOS</h2>        
+            </div>
+        </div>
+        <nav>    
+            <a href="index.html">Inicio</a>    
+            <a href="equipo.html">Equipo</a>    
+            <a href="empleados.html">Empleados</a>    
+            <a href="contacto.html">Contacto</a>    
+            <a href="contenidos.html">Contenidos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="caja1">
+            <h2>Diagrama Textual del Funcionamiento de Internet en un Ordenador</h2>
+            <b>Usuario</b>
+            <ul>
+                <li>El usuario solicita acceso a un sitio web o servicio en línea a través de un navegador web.</li>
+                <li>El navegador web envía la solicitud al Sistema Operativo del ordenador.</li>
+            </ul>
+            <b>Sistema Operativo</b>
+            <ul>
+                <li>El sistema operativo recibe la solicitud y la envía al Navegador Web.</li>
+
+                <li>El navegador web procesa la solicitud y la envía al Proveedor de Servicios de Internet (ISP) a través de la Tarjeta de Red.</li>
+           </ul>
+            <b>Tarjeta de Red</b>
+            <ul>
+                <li>La tarjeta de red es un componente de hardware que permite la conexión a Internet.</li>
+                <li>La tarjeta de red envía la solicitud a través de la Red de Área Local (LAN) o Red de Área Amplia (WAN).</li>
+            </ul>
+            <b>Proveedor de Servicios de Internet (ISP)</b>
+            <ul>
+                <li>El ISP recibe la solicitud y la envía a través de la Red de Internet.</li>
+                <li>La red de Internet es una red global de redes que conecta millones de dispositivos.</li>
+            </ul>
+            <b>Servidor Web</b>
+            <ul>
+                <li>El servidor web recibe la solicitud y procesa la información solicitada.</li>
+                <li>El servidor web envía la información solicitada de vuelta al Proveedor de Servicios de Internet 
+                (ISP).</li>
+            </ul>
+            <b>Proveedor de Servicios de Internet (ISP)</b>
+            <ul>
+                <li>El ISP recibe la información solicitada y la envía de vuelta al Ordenador del usuario a través de la 
+                Red de Internet.</li>
+            </ul>
+            <b>Ordenador del Usuario</b>
+            <ul>
+                <li>La tarjeta de red recibe la información solicitada y la envía al Navegador Web.</li>
+                <li>El navegador web procesa la información y la muestra al usuario en la pantalla.</li>
+            </ul>
+            <b>Protocolos de Comunicación</b>
+            <ul>
+                <li>HTTP (Hypertext Transfer Protocol): protocolo utilizado para la comunicación entre el navegador web y el servidor web.</li>   
+                <li>TCP/IP (Transmission Control Protocol/Internet Protocol): protocolo utilizado para la comunicación entre dispositivos en la red de Internet.</li>    
+                <li>DNS (Domain Name System): sistema que traduce nombres de dominio en direcciones IP.</li>
+            </ul>
+            <b>Conexiones</b>
+            <ul>
+                <li>Ordenador del Usuario -> Proveedor de Servicios de Internet (ISP): la tarjeta de red envía la solicitud a través de la red de área local o red de área amplia.</li>   
+                <li>Proveedor de Servicios de Internet (ISP) -> Servidor Web: el ISP envía la solicitud a través de la red de Internet.</li>
+                <li>Servidor Web -> Proveedor de Servicios de Internet (ISP): el servidor web envía la información solicitada de vuelta al ISP.</li>
+                <li>Proveedor de Servicios de Internet (ISP) -> Ordenador del Usuario: el ISP envía la información solicitada de vuelta al ordenador del usuario.</li>
+            </ul>
+        </section>
+        <section class="caja1">
+            <h2>Redes de Computadoras</h2>
+            <b>Definición</b>
+            <p>Una red de computadoras es un conjunto equipos informáticos, conectados por medio de cables, señales, ondas o cualquier otro método de transporte de datos, para compartir información, recursos y servicios. A cada una de las computadoras conectadas a la red se le denomina un nodo.</p>
+            <b>Clasificación</b>
+            <h3>Según su cobertura</h3>
+            <section class="caja3">
+                <b>PAN (Red de Área Personal)</b>
+                <p>Usada para la comunicación entre los dispositivos cerca de una persona. El alcance de una PAN es de algunos metros.</p>
+            </section>
+            <section class="caja3">
+                <b>LAN (Red de Área Local)</b>
+                <p>Una red que se limita a un área tal como un cuarto, un solo edificio o una nave. Una LAN grande se divide generalmente en segmentos lógicos más pequeños llamados grupos de trabajo.</p>
+            </section>
+            <section class="caja3">
+                <b>MAN (Red de Área Metropolitana)</b>
+                <p>Una red que conecta las redes de dos o más locales pero no se extiende más allá de los límites de la una ciudad.</p>
+            </section>
+            <section class="caja3">
+                <b>WAN (Red de Área Mundial)</b>
+                <p>Es una red que cubre un área geográfica amplia y en gran parte de su estructura utiliza instalaciones de transmisión telefónicas.</p>
+            </section>
+            <h3>Según su topología</h3>
+            <section class="caja3">
+                <img src="img/estrella.png">
+                <b>Estrella</b>
+                <p>La red se une en un único concentrador. Su ventaja es que este monitorea el tráfico y evita las colisiones y una conexión interrumpida no afecta al resto de la red. La desventaja es que los mensajes son enviados a todas las estaciones, aunque vaya dirigido a una.</p>
+            </section>
+            <section class="caja3">
+                <img src="img/anillo.png">
+                <b>Anillo</b>
+                <p>Las estaciones están unidas unas con otras formando un círculo por medio de un cable común. Las señales circulan en un solo sentido alrededor del círculo, regenerándose en cada nodo. Cada nodo examina la información que es enviada a través del anillo, si no está dirigida a él la pasa al siguiente nodo. La desventaja es que si se rompe una conexión, se cae la red completa</p>
+            </section>
+            <section class="caja3">
+                <img src="img/bus.png">
+                <b>Bus</b>
+                <p>Las estaciones están conectadas por un único segmento de cable. A diferencia del anillo, el bus es pasivo, no se produce regeneración de las señales en cada nodo. Los nodos en una red de "bus" transmiten la información y esperan que ésta no vaya a chocar con otra información transmitida por otro de los nodos. Si esto ocurre, cada nodo espera una pequeña cantidad de tiempo al azar, después intenta retransmitir la información</p>
+            </section>
+            <section class="caja3">
+                <img src="img/jerarquica.png">
+                <b>Jerárquica</b>
+                <p>Los nodos están colocados en forma de árbol. Es parecida a una serie de redes en estrella interconectadas, con la diferencia que no tiene un nodo central sino un nodo de enlace troncal, generalmente ocupado por un hub o switch, desde el que se ramifican los demás nodos. Es una variación de la red en bus, la falla de un nodo no implica interrupción en las comunicaciones porque se comparte el mismo canal de comunicaciones. </p>
+            </section>
+            <section class="caja3">
+                <img src="img/hibrida.png">
+                <b>Híbridas</b>
+                <p>El bus, la estrella y el anillo se combinan algunas veces para formar redes híbridas.</p>
+            </section>
+            <h3>Según su relación funcional</h3>
+            <section class="caja3">
+                <b>Cliente-Servidor</b>
+                <p>El servidor es una máquina específica que usa un sistema operativo desarrollado especialmente para este tipo de red. Las estaciones de trabajo comparten recursos disponibles a partir de este servidor. La ejecución de las tareas está dividida entre el cliente (o estación) y el servidor. Proporciona mayor seguridad y rendimiento.</p>
+            </section>
+            <section class="caja3">
+                <b>Par a Par</b>
+                <p>Es un tipo de red donde todos los equipos conectados pueden desempeñar el papel de servidor y de estación de trabajo al mismo tiempo. Si alguien quisiera compartir un recurso podría ofrecerlo a los demás. Este es un tipo de red para trabajos simples, donde el nivel de información es pequeño y la seguridad no es importante.</p>
+            </section>
+            <b>Computadoras y Periféricos</b>
+            <h3>Placas de comunicación</h3>
+            <ul>
+                <li><b>Placa de red:</b> permite la conexion con otras computadoras utilizanod un cable.</li>   
+                <li><b>Modem:</b> cuando la PC se conecta por medio de un router.</li>
+            </ul>
+            <h3>Cables de conexión</h3>
+            <section class="caja3">
+                <img src="img/partrenzado.png">
+                <b>Par trenzado</b>
+                <p>El mas común tiene ocho cables trenzados para evitar interferencias.</p>
+            </section>
+            <section class="caja3">
+                <img src="img/coaxial.png">
+                <b>Coaxial</b>
+                <p>Usado en televisión por cable.</p>
+            </section>
+            <section class="caja3">
+                <img src="img/fibraoptica.png">
+                <b>Par trenzado</b>
+                <p>Usa luz para transmitir datos a muy alta velocidad y sin interferencia.</p>
+            </section>
+            <b>Área de Cobertura</b>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Barreras<br>(techo, pared, piso)</th>
+                        <th>Confiable<br>(metros)</th>
+                        <th>Probable<br>(metros)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>          
+                        <td>Área Abierta</td>            
+                        <td>Vista directa</td>            
+                        <td>120</td>            
+                        <td>200</td>        
+                    </tr>      
+                    <tr>         
+                        <td>Área Semiabierta</td>          
+                        <td>Madera, material sintético</td>          
+                        <td>30</td>          
+                        <td>50</td>       
+                    </tr>           
+                    <tr>           
+                        <td>Área Cerrada</td>            
+                        <td>Ladrillo</td>            
+                        <td>15</td>            
+                        <td>25</td>           
+                    </tr>          
+                    <tr>           
+                        <td>Área Obstruída</td>            
+                        <td>Metal, concreto</td>
+                        <td>-</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <b>Equipos de Conexión</b>
+            <ul>
+                <li><b>Hubs o Concentradores:</b> son equipos que permiten estructurar el cableado de las redes. El hub da conectividad pero lo que entra por una boca se repite en todas y son las terminales las que tienen que rechazar lo que no es para ellas.</li>   
+                <br>
+                <li><b>Switch:</b> es parecido al hub pero lo que entra por una boca solo sale por la que tiene conectada la terminal destino haciendo que la red tenga menos trafico, se dice que es un hub inteligente porque sabe a quien enviar cada paquete.</li>
+                <br>
+                <i>El Hub es "el que grita" (repite todo a todos). El Switch es "el cartero" (sabe exactamente en qué puerto está cada destinatario), lo que hace la red más rápida.</i>
+                <br>
+                <br>
+                <li><b>Puentes (Bridges):</b> puede unir segmentos o grupos de trabajo LAN, pero puede dividir una red para aislar el tráfico o los problemas.</li>
+                <br>
+                <li><b>Enrutadores (Routers):</b> conecta redes  o segmentos red con distintos protocolos y arquitecturas.</li>
+                <br>
+                <i>El puente une dos pasillos de la misma casa (segmentos de una misma red). El router es "el guia de viajes" que decide el camino más rapido para llegar a otra ciudad (otra red con distinto protocolo).</i>
+                <br>
+                <br>
+                <li><b>Repetidores (Repeaters):</b> amplían la longitud de la red uniendo dos segmentos y amplificando la señal, pero junto con ella amplifican también el ruido.</li>
+                <br>
+                <i>Es simplemente un "megáfono" para que la señal llegue más lejos cuando el cable no alcanza.</i>
+                <br>
+                <br>
+                <li><b>Pasarelas (Gateways):</b> son equipos para interconectar redes con protocolos y arquitecturas completamente diferentes a todos los niveles de comunicación, al igual que un router, pero se lo emplea como puerta de salida de una red a otra más grande.</li>
+                <br>
+                <i>Es "la aduana" o puerta de salida obligatoria para ir a un territorio gigante, como Internet.</i>
+            </ul>
+            <br>
+            <iframe src="doc/Redes.pdf" width="100%" height="600"  style="border:1px solid #ccc; border-radius:10px;"></iframe>
+            <br><br>
+            <a href="doc/Redes.pdf" target="_blank" class="btn-documento">Abrir documento completo</a>
+        </section>
+        <section class="caja1">
+            <h2>Formato de Informe</h2>
+            <h3>Portada o caratula:</h3>
+            <p>Logo, título, materia, nombre del docente, integrantes del grupo, curso y división, año.</p>
+            <h3>Índice:</h3>
+            <p>Número de página.</p>
+            <h3>Introducción:</h3>
+            <p>Breve descripción de lo que trata el tema.</p>
+            <h3>Palabras Clave:</h3>
+            <p>Abreviaturas o siglas de palabras que se van a repetir.</p>
+            <h3>Desarollo y contenido:</h3>
+            <p>Texto, imágenes, vídeo.</p>
+            <h3>Conclusión:</h3>
+            <p>Breve descripción de lo que nos pareció el tema (contenido u opinión).</p>
+            <h3>Bibliografía:</h3>
+            <p>Debe mencionar los links junto a un resumen de lo que trata la fuente de información.</p>
+        </section>
+        <section>
+        </section>
+        <section class="caja1">
+            <h2>Norma A y Norma B de Ponchado de cables</h2>
+            <h3>Cable UTP</h3>
+            <p>Un cable UTP es un cordón que está resguardado por alguna clase de recubrimiento y que permite conducir electricidad o distintos tipos de señales. Es una sigla que significa Par Trenzado no Blindado. El cable UTP por lo tanto, es una clase de cable que no se encuentra blindado y que suele emplearse en las telecomunicacones.</p>
+            <h3>Cableado Estructurado</h3>
+            <p>Nombran dos tipos de normas o configuraciones. La diferencia entre ellas es el orden de los colores de los pares a seguir para el conector RJ45.</p>
+            <h3>¿Para qué sirve?</h3>
+            <ul>
+                <li>Minimizar tiempo, costos y aumentar el rendimiento de equipos.</li>
+                <li>Optimizar y compartir recursos ya que es administrable por el usuario.</li>
+                <li>Mejora y facilita el mantenimiento de los equipos.</li>
+            </ul>
+            <h3>Estándares T568-A y T568-B</h3>
+            <p>Define el órden de los colores en el conector RJ45.</p>
+            <section class="caja3alt">
+                <img src="img/normaa.png" class="caja3alt">
+                <b>Norma A</b>
+                <ol>
+                    <li>Blanco-Verde</li>
+                    <li>Verde</li>
+                    <li>Blanco-Naranja</li>
+                    <li>Azul</li>
+                    <li>Blanco-Azul</li>
+                    <li>Naranja</li>
+                    <li>Blanco-Marrón</li>
+                    <li>Marrón</li>
+                </ol>
+            </section>
+            <section class="caja3alt">
+                <img src="img/normab.png">
+                <b>Norma B</b>
+                <ol>
+                    <li>Blanco-Naranja</li>
+                    <li>Naranja</li>
+                    <li>Blanco-Verde</li>
+                    <li>Azul</li>
+                    <li>Blanco-Azul</li>
+                    <li>Verde</li>
+                    <li>Blanco-Marrón</li>
+                    <li>Marrón</li>
+                </ol>
+            </section>
+            <br>
+            <iframe src="doc/Norma A y B.pdf" width="100%" height="600"  style="border:1px solid #ccc; border-radius:10px;"></iframe>
+            <br><br>
+            <a href="doc/Norma A y B.pdf" target="_blank" class="btn-documento">Abrir documento completo</a>
+        </section>
+        <section class="caja1">
+            <h2>Tipos de Unidades de Almacenamiento de información</h2>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Unidad de almacenamiento</th>
+                        <th>Equivale a</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr> 
+                        <td>Kilobyte (KB)</td> 
+                        <td>1024 bytes</td> 
+                    </tr>
+                    <tr>
+                        <td>Megabyte (MB)</td> 
+                        <td>1024 kilobytes</td> 
+                    </tr>
+                    <tr> 
+                        <td>Gigabyte (GB)</td>    
+                        <td>1024 megabytes</td>    
+                    </tr>       
+                    <tr>      
+                        <td>Terabyte (TB)</td>        
+                        <td>1024 gigabytes</td>      
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="caja1">
+            <h2>Instalación y Administración de Redes Pequeñas</h2>
+            <h3>Estructura de una Red y Características</h3>
+            <p>Debemos tener en cuenta la estructura y ubicación de los equipos dentro de un ambiente laboral. Puede ser:</p>
+            <ul>
+                <li><b>Cableada:</b> puede superar los 100 Mbps y llegar hasta 1 Gbps.</li>
+                <li><b>Inalámbrica:</b> la transmisión máxima es de 108 Mbps.</li>
+            </ul>
+            <h3>Pasos para Instalar una Red Pequeña</h3>
+            <p>Es muy importante que el espacio donde montemos la red tenga la Instalación eléctrica en óptimas condiciones. Una vez tengamos definido por donde tener los cables de red, debemos calcular los metros necesarios.</p>
+            <ol>
+                <li>Realizar un obsquejo del recorrido que seguirán los cables y establecer en qué lugar irá ubicado el concetrador.</li>
+                <li>Medir las paredes para arealizar una correcta Instalación del cable canal.</li>
+                <li>Pasar el cable de red por el cable canal y armar las fichas en los terminales donde se ubicará el concentrador. En cada puesto de trabajo se debe armar rosetas con conectores RJ45 hembra.</li>
+                <li>Una vez las fichas esten armadas se debe proceder a amorar el concentrador a la pared y a conectar cada una de las rosetas a él.</li>
+                <li>Verificar que no exista ningun problema. La mejor forma de verificar los cables de red es mediante un tester de red.</li>
+                <li>Con la red fisicamente armada, solo queda conectar a ella las computadoras, pero antes se deben instalar las interfaces en todas las computadoras que no la tengan o cuenten con una obsoleta.</li>
+            </ol>
+            <h3>Parámetros de Configuración</h3>
+            <p>Para una red pequeña, los parámetros de configuración son bastante sencillos:</p>
+            <ol>
+                <li>Se debe asignar un nombre a cada equipo, junto con una descripción. Estos datos deben ser diferentes en cada PC, dado que sirven para reconocer a cada máquina dentro de la red.</li>
+                <li>Se debe establecer el nombre del grupo de tabajo, que debe ser el mismo para todas las computadoras que conformen la red local.</li>
+            </ol>
+            <h3>Elementos de Red</h3>
+            <p>Ademas de la planificación inicial, debemos determinar cúales son los componentes y las herramientas necesarias para armar una red pequeña.</p>
+            <ol>
+                <li>Cable UTP categoria 5</li>
+                <li>Fichas RJ45</li>
+                <li>Capuchones de Red</li>
+                <li>Un Switch</li>
+                <li>Módem</li>
+                <li>Un Router</li>
+            </ol>
+            <h3>Equipos de Conectividad</h3>
+            <ol>
+                <li>Módem USB ADSL</li>
+                <li>Módem/Router ADSL</li>
+                <li>Router WiFi</li>
+                <li>Interfaz de red WLAN</li>
+            </ol>
+            <br>
+            <iframe src="doc/Instalación y administración de redes pequeñas.pdf" width="100%" height="600"  style="border:1px solid #ccc; border-radius:10px;"></iframe>
+            <br><br>
+            <a href="doc/Instalación y administración de redes pequeñas.pdf" target="_blank" class="btn-documento">Abrir documento completo</a>
+        </section>
+        <section class="caja1">
+            <h2>Redes de Datos y Arquitectura</h2>
+            <h3>Redes de Datos</h3>
+            <p>Es un conjunto de equipos informáticos y dispositivos conectados entre sí mediante medios físicos o inalámbricos, con el objetivo de compartir información y recursos.</p>
+            <p><b>Usabilidad:</b> Permite envíar correos, imprimir desde cualquier PC, compartir archivos y acceder a internet.</p>
+            <p><b>Ventajas:</b> Ahorro de recursos, comunicación rapida, trabajo colaborativo, acceso centralziado a la información.</p>
+            <h3>Arquitectura de Red</h3>
+            <p>Es el diseño y la organización de los componentes de una red. Define cómo se comunican los dispositivos. Las principales tecnologías fueron:</p>
+            <p><b>ARCNET:</b> Una de las primeras redes para oficinas. Usaba topología de bus y era lenta para los estándares actuales.</p>
+            <p><b>Token Ring:</b> Utilizaba un "testigo" o token que circulaba por la red. Solo el equipo con el token podia transmitir datos.</p>
+            <p><b>Ethernet:</b> Es el estándar mas utilizado hoy. Permite altas velocidades y usa el protoclo CSMA/CD par aevitar colisiones de datos.</p>
+            <h3>Protocolos de Red</h3>
+            <p>Son las reglas que permiten que dos dispositivos se entiendan. Por ejemplo: TCP/IP, HTTP, FTP. Sin protocolos la comunicación no seriá posible.</p>
+        </section>
+        <section class="caja1">
+            <h2>Modelo OSI y Tipos de Red</h2>
+            <h3>Modelo OSI</h3>
+            <p>Es un modelo técnico de 7 capas que explica como viajan los datos desde un dispositivo a otro. Las capas son: <b>Física, Enlace de Datos, Red, Transporte, Sesión, Presentación y Aplicación.</b> Sirve para entender y resolver problemas de red.</p>
+        </section>
+        <section class="caja1">
+            <h2>Medios y digitalización</h2>
+            <h3>Medios de Transmisión</h3>
+            <p><b>Guiados:</b> Usan un cable físico. Ej: par trenzado, cable coaxial, fibra óptica.</p>
+            <p><b>No Guiados:</b> Usan el aire. Ej: Wi-fi, ondas de radio, Infrarrojo.</p>
+            <h3>Digitalización de señales</h3>
+            <p>Es el proceso de convertir información analógica, como la voz, en señales digitales de 0 y 1 para que la computadora pueda procesarla y transmitirla.</p>
+        </section>
+        <section class="caja1">
+            <h2>Cableado y Soporte Físico</h2>
+            <h3>Soportes Físicos Para el Transporte de Señales</h3>
+            <p><b>Ondas Sonoras:</b> Usadas en algunos sistemas antiguos.</p>
+            <p><b>Ondas electromagnéticas:</b> Usadas en WiFi y telefonía movil.</p>
+            <h3>Cableado Estructurado</h3>
+            <p>Es un sistema organizado de cables y conectores que permiten que la red sea ordenada, escalable y fácil de mantener.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Teléfono: +54 9 3804 58-2457</p>
+        <p>Email: deltadatadefense@gmail.com</p>
+        <p>Dirección: San Nicolás de Bari (Oeste) 600</p>
+    </footer>
+</body>
+</html>

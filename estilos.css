@@ -1,0 +1,296 @@
+:root {
+    --verde-principal: #2E7D32;
+    --verde-hover: #388E3C;
+    --verde-oscuro: #1B5E20;
+    --verde-suave: #e8f5e9;
+    --gris-fondo: #f4f7f6;
+    --gris-borde: #e0e0e0;
+    --texto-principal: #2c3e50;
+    --texto-secundario: #546e7a;
+    --sombra-card: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --sombra-hover: 0 8px 25px rgba(46, 125, 50, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--gris-fondo);
+    color: var(--texto-principal);
+    margin: 0;
+    padding: 0;
+}
+
+main b {
+    color: var(--verde-principal);
+}
+
+/* Header & Navegación */
+header {
+    background: linear-gradient(135deg, var(--verde-oscuro) 0%, var(--verde-principal) 100%);
+    color: white;
+    padding: 25px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contenedor-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.contenedor-header p {
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+}
+
+/* Estructura Principal */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Cajas Generales y Contenedores */
+section {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: var(--sombra-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.caja1 {
+    border: 1px solid var(--gris-borde);
+    border-top: 4px solid var(--verde-principal);
+    background: white;
+}
+
+.caja1 h2 {
+    color: var(--verde-principal);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--verde-suave);
+    padding-bottom: 8px;
+}
+
+.caja1 h3 {
+    color: var(--verde-oscuro);
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.caja1 img {
+    border: 2px solid var(--gris-borde);
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Modificaciones de Grilla para Tarjetas de Empleados y Equipos */
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+main > section {
+    grid-column: span 12;
+}
+
+/* Conversión dinámica de caja2 y caja3 a tarjetas */
+.caja2, .caja3, .caja3alt {
+    grid-column: span 6;
+    border: 1px solid var(--gris-borde);
+    border-top: 4px solid var(--verde-principal);
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .caja2, .caja3, .caja3alt {
+        grid-column: span 12;
+    }
+}
+
+.caja2:hover, .caja3:hover, .caja3alt:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-hover);
+}
+
+.caja2 img, .caja3 img, .caja3alt img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--gris-borde);
+    margin: 0 0 10px 0;
+    float: none;
+}
+
+.caja2 h3, .caja3 b, .caja3alt b {
+    color: var(--verde-principal);
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.caja2 strong {
+    color: var(--verde-oscuro);
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px 16px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+button {
+    padding: 12px 24px;
+    background-color: var(--verde-principal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: var(--verde-hover);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Botón PDF / Documentos */
+.btn-documento {
+    display: inline-block;
+    background-color: var(--verde-principal);
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none !important;
+    transition: background-color 0.2s ease;
+}
+
+.btn-documento:hover {
+    background-color: var(--verde-hover);
+}
+
+/* Tablas */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--gris-borde);
+}
+
+.tabla thead {
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+.tabla th {
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabla td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--gris-borde);
+    border-right: none;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #f8faf8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--verde-oscuro);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
